@@ -113,8 +113,6 @@
 				00AC5DE92317D09A00965A95 /* Sources */,
 				00AC5DEA2317D09A00965A95 /* Frameworks */,
 				00AC5DEB2317D09A00965A95 /* Resources */,
-				18C9AB9F64F88669BCCBF82B /* [CP] Embed Pods Frameworks */,
-				197ED15EC2077BFFE04FFAEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,40 +170,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18C9AB9F64F88669BCCBF82B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		197ED15EC2077BFFE04FFAEA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CBB2126D35B3FBFC413BB013 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

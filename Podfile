@@ -12,5 +12,4 @@ target 'SocialMediaSharing' do
   pod "FacebookShare"
   pod "TwitterKit"
   
-
 end
