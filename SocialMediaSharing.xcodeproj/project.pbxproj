@@ -14,6 +14,8 @@
 		5C8A24C02320DAF200491891 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A24BF2320DAF200491891 /* logo.png */; };
 		5C8A24C52320E01E00491891 /* SKToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A24C42320E01E00491891 /* SKToastView.swift */; };
 		5C8A24C72320E8AE00491891 /* InstagramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A24C62320E8AE00491891 /* InstagramManager.swift */; };
+		5CDC4EC42321199900496A47 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CDC4EC32321199900496A47 /* README.md */; };
+		5CDC4EC62321203000496A47 /* ConfigImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDC4EC52321203000496A47 /* ConfigImage.png */; };
 		AFFA8F1AF6266A4B548D34D1 /* Pods_SocialMediaSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B763FE6AED457BBD484C2269 /* Pods_SocialMediaSharing.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		5C8A24BF2320DAF200491891 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		5C8A24C42320E01E00491891 /* SKToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKToastView.swift; sourceTree = "<group>"; };
 		5C8A24C62320E8AE00491891 /* InstagramManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramManager.swift; sourceTree = "<group>"; };
+		5CDC4EC32321199900496A47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5CDC4EC52321203000496A47 /* ConfigImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConfigImage.png; sourceTree = "<group>"; };
 		73B778BC8BDA7F2F8498E857 /* Pods-SocialMediaSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaSharing.release.xcconfig"; path = "Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing.release.xcconfig"; sourceTree = "<group>"; };
 		B763FE6AED457BBD484C2269 /* Pods_SocialMediaSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMediaSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A5D4F7D9518B995B451229 /* Pods-SocialMediaSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaSharing.debug.xcconfig"; path = "Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		00AC5DE42317D09A00965A95 = {
 			isa = PBXGroup;
 			children = (
+				5CDC4EC32321199900496A47 /* README.md */,
 				00AC5DEF2317D09A00965A95 /* SocialMediaSharing */,
 				00AC5DEE2317D09A00965A95 /* Products */,
 				F272302FB09A863C6FFB2D1F /* Pods */,
@@ -73,6 +78,7 @@
 				00AC5DF72317D09C00965A95 /* Assets.xcassets */,
 				00AC5DFC2317D09C00965A95 /* Info.plist */,
 				5C8A24BF2320DAF200491891 /* logo.png */,
+				5CDC4EC52321203000496A47 /* ConfigImage.png */,
 			);
 			path = SocialMediaSharing;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 			files = (
 				00AC5DF82317D09C00965A95 /* Assets.xcassets in Resources */,
 				00AC5DF62317D09A00965A95 /* Main.storyboard in Resources */,
+				5CDC4EC62321203000496A47 /* ConfigImage.png in Resources */,
+				5CDC4EC42321199900496A47 /* README.md in Resources */,
 				5C8A24C02320DAF200491891 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
