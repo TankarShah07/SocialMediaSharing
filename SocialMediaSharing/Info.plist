@@ -22,22 +22,19 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb382908272641375</string>
-				<string>twitterkit-lPj6mpWDYOb1VfygJfPIWbAEy</string>
-			</array>
+			<array/>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>382908272641375</string>
+	<string></string>
 	<key>FacebookDisplayName</key>
 	<string>Social Media Sharing</string>
 	<key>IS_TWITTER_CONSUMER_KEY</key>
-	<string>lPj6mpWDYOb1VfygJfPIWbAEy</string>
+	<string></string>
 	<key>IS_TWITTER_CONSUMER_SECRET</key>
-	<string>J4eP5jML1SScoTk9bB4zjaJsW7bKkCUIImXUXjN823BVl08OVN</string>
+	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>twitter</string>
