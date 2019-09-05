@@ -25,7 +25,7 @@ After that,
 Go to ```info.plist```  file and add your facebook app id (if you want to use facebook sharing) and twitter app consumer key and consumer secret (if you want to use twitter sharing)
 also provide URL Types(refer image)
 
-<img src="https://github.com/TankarShah07/SocialMediaSharing/blob/master/ConfigImage.png" alt="ConfigImage">
+<img src="https://github.com/TankarShah07/SocialMediaSharing/blob/master/SocialMediaSharing/ConfigImage.png" alt="ConfigImage">
 
 
 ## Features
