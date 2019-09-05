@@ -16,12 +16,51 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb382908272641375</string>
+				<string>twitterkit-lPj6mpWDYOb1VfygJfPIWbAEy</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>382908272641375</string>
+	<key>FacebookDisplayName</key>
+	<string>Social Media Sharing</string>
+	<key>IS_TWITTER_CONSUMER_KEY</key>
+	<string>lPj6mpWDYOb1VfygJfPIWbAEy</string>
+	<key>IS_TWITTER_CONSUMER_SECRET</key>
+	<string>J4eP5jML1SScoTk9bB4zjaJsW7bKkCUIImXUXjN823BVl08OVN</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>twitter</string>
+		<string>twitterauth</string>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>twitter</string>
+		<string>twitterauth</string>
+		<string>instagram</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>$(IS_APP_NAME) requires Photo library access to let you choose which photo do you want to upload</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(IS_APP_NAME) requires Photo library access to let you choose which photo do you want to upload</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -31,8 +70,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

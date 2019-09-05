@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wwn-F7-Zh4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Share View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ShareViewController" customModule="SocialMediaSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUS-6A-vI8">
+                                <rect key="frame" x="62" y="340.5" width="290" height="215"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vti-8B-hYl">
+                                        <rect key="frame" x="20" y="20" width="250" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="9zh-re-ZDe"/>
+                                            <constraint firstAttribute="height" constant="45" id="Ihc-DE-Ru3"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="facebook"/>
+                                        <connections>
+                                            <action selector="btnFacebookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAG-M5-Dff"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IY-Nh-cMh">
+                                        <rect key="frame" x="20" y="85" width="250" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="WTv-eB-GoF"/>
+                                            <constraint firstAttribute="width" constant="250" id="alA-1r-xrr"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="twitter"/>
+                                        <connections>
+                                            <action selector="btnTwitterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFN-eC-Pcs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0Z-hl-wdB">
+                                        <rect key="frame" x="20" y="150" width="250" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Aug-Rj-wVn"/>
+                                            <constraint firstAttribute="height" constant="45" id="xBv-Ve-v7q"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Instagram"/>
+                                        <connections>
+                                            <action selector="btnInstagramAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cA-xL-Vm4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Vti-8B-hYl" firstAttribute="top" secondItem="zUS-6A-vI8" secondAttribute="top" constant="20" id="3V9-GH-hC6"/>
+                                    <constraint firstItem="u0Z-hl-wdB" firstAttribute="leading" secondItem="6IY-Nh-cMh" secondAttribute="leading" id="9aG-x5-b1O"/>
+                                    <constraint firstItem="u0Z-hl-wdB" firstAttribute="top" secondItem="6IY-Nh-cMh" secondAttribute="bottom" constant="20" id="Bb5-o9-I7o"/>
+                                    <constraint firstItem="Vti-8B-hYl" firstAttribute="leading" secondItem="zUS-6A-vI8" secondAttribute="leading" constant="20" id="Jt5-h1-ugq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vti-8B-hYl" secondAttribute="trailing" constant="20" id="O0X-Df-67Y"/>
+                                    <constraint firstAttribute="width" constant="290" id="Qnu-nd-gkZ"/>
+                                    <constraint firstItem="6IY-Nh-cMh" firstAttribute="leading" secondItem="Vti-8B-hYl" secondAttribute="leading" id="h5y-Ft-4ys"/>
+                                    <constraint firstItem="6IY-Nh-cMh" firstAttribute="trailing" secondItem="Vti-8B-hYl" secondAttribute="trailing" id="iz2-Hf-XWN"/>
+                                    <constraint firstAttribute="height" constant="215" id="jbt-Ex-rEb"/>
+                                    <constraint firstItem="Vti-8B-hYl" firstAttribute="centerX" secondItem="zUS-6A-vI8" secondAttribute="centerX" id="pSQ-uh-MTc"/>
+                                    <constraint firstItem="u0Z-hl-wdB" firstAttribute="trailing" secondItem="6IY-Nh-cMh" secondAttribute="trailing" id="qsI-kE-yrT"/>
+                                    <constraint firstItem="6IY-Nh-cMh" firstAttribute="top" secondItem="Vti-8B-hYl" secondAttribute="bottom" constant="20" id="sLO-tE-Rdr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zUS-6A-vI8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M7L-0O-Hbq"/>
+                            <constraint firstItem="zUS-6A-vI8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dUk-P4-JqH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qsk-rb-dyq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gUS-7Q-E6E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wwn-F7-Zh4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Jg-QT-1cZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z3k-6g-aoJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAq-99-yXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Instagram" width="233.5" height="40"/>
+        <image name="facebook" width="233.5" height="40"/>
+        <image name="twitter" width="233.5" height="40"/>
+    </resources>
 </document>
