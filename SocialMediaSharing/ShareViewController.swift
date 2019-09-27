@@ -158,7 +158,7 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
     
     /** FUNCTION COMMENT
      Use : to check user has installed facebook application or not
-     From where it is called : called from btnImportFromOther
+     From where it is called : called from btnFacebookAction
      Arguments : nil
      Return Type : Bool
      **/
@@ -174,7 +174,7 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
     
     /** FUNCTION COMMENT
      Use : to open sharing dialog for Facebook application
-     From where it is called : called from btnImportFromOther
+     From where it is called : called from facebookShareOldWay
      Arguments : content with type of ShareMediaContent
      Return Type : nil
      **/
@@ -187,6 +187,12 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
         dialog.show()
     }
     
+    /** FUNCTION COMMENT
+     Use : to get stored facebook user's data
+     From where it is called : called from facebookShareNewWay
+     Arguments : nil
+     Return Type : nil
+     **/
     func getFacebookUserData(){
         
         let graphPath = "me"
@@ -216,6 +222,12 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
         }
     }
     
+    /** FUNCTION COMMENT
+     Use : to setup stored facebook user's data into label and imageview
+     From where it is called : called from setupInitials,getFacebookUserData
+     Arguments : nil
+     Return Type : nil
+     **/
     func setupFacebookUserData(){
         
         let dictUserInfo = self.getLocalStorage(fileName: "facebookUserData")
@@ -249,6 +261,12 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
         }
     }
     
+    /** FUNCTION COMMENT
+     Use : to share post on facebook with new concept of by fetching userobject
+     From where it is called : called from btnFacebookAction
+     Arguments : nil
+     Return Type : nil
+     **/
     func facebookShareNewWay(){
         if AccessToken.current != nil{
             self.facebookShareOldWay()
@@ -273,6 +291,12 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
         }
     }
     
+    /** FUNCTION COMMENT
+     Use : to share post on facebook with already developed in version1.0
+     From where it is called : called from btnFacebookAction,facebookShareNewWay
+     Arguments : nil
+     Return Type : nil
+     **/
     func facebookShareOldWay(){
         let content = ShareMediaContent()
         
@@ -298,7 +322,7 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
     
     /** FUNCTION COMMENT
      Use : to open sharing dialog for Instagram application
-     From where it is called : called from btnImportFromOther
+     From where it is called : called from instagramShareOldWay
      Arguments : nil
      Return Type : nil
      **/
@@ -308,7 +332,7 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
     
     /** FUNCTION COMMENT
      Use : to check user has installed twitter application or not
-     From where it is called : called from btnImportFromOther
+     From where it is called : called from btnTwitterAction
      Arguments : nil
      Return Type : Bool
      **/
@@ -322,6 +346,12 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
         return false
     }
     
+    /** FUNCTION COMMENT
+     Use : to setup instagram user's data into label, imageview
+     From where it is called : called from getUserInfo,setupInitials
+     Arguments : nil
+     Return Type : nil
+     **/
     func setupInstagramUserData(){
         
         let dictUserInfo = self.getLocalStorage(fileName: "instagramUserData")
@@ -344,6 +374,12 @@ class ShareViewController: UIViewController, SharingDelegate,UIWebViewDelegate {
         }
     }
     
+    /** FUNCTION COMMENT
+     Use : to setup instagram user's data into label, imageview
+     From where it is called : called from checkRequestForCallbackURL
+     Arguments : nil
+     Return Type : completion block
+     **/
     func getUserInfo(completion: @escaping ((_ data: Bool) -> Void)){
         let url = String(format: "%@%@", arguments: [INSTAGRAM_IDS.INSTAGRAM_USER_INFO,INSTAGRAM_IDS.INSTAGRAM_FETCHED_ACCESS_TOKEN])
         var request = URLRequest(url: URL(string: url)!)
