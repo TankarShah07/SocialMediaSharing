@@ -7,10 +7,11 @@ target 'SocialMediaSharing' do
 
   # Pods for SocialMediaSharing
 
-  pod "FacebookCore"
-  pod "FacebookLogin"
-  pod "FacebookShare"
-  pod "TwitterKit"
+#  pod "FacebookCore"
+#  pod "FacebookLogin"
+#  pod "FacebookShare"
+#  pod "TwitterKit"
+  pod "SDWebImage"
   
 
 end

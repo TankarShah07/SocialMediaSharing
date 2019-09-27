@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		00AC5DF32317D09A00965A95 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5DF22317D09A00965A95 /* ShareViewController.swift */; };
 		00AC5DF62317D09A00965A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AC5DF42317D09A00965A95 /* Main.storyboard */; };
 		00AC5DF82317D09C00965A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AC5DF72317D09C00965A95 /* Assets.xcassets */; };
+		5C0FF907233CB142004B990D /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0FF906233CB142004B990D /* NSString+Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5C8A24C02320DAF200491891 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A24BF2320DAF200491891 /* logo.png */; };
 		5C8A24C52320E01E00491891 /* SKToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A24C42320E01E00491891 /* SKToastView.swift */; };
 		5C8A24C72320E8AE00491891 /* InstagramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A24C62320E8AE00491891 /* InstagramManager.swift */; };
@@ -27,6 +28,9 @@
 		00AC5DF52317D09A00965A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00AC5DF72317D09C00965A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00AC5DFC2317D09C00965A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C0FF904233CB141004B990D /* SocialMediaSharing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialMediaSharing-Bridging-Header.h"; sourceTree = "<group>"; };
+		5C0FF905233CB141004B990D /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		5C0FF906233CB142004B990D /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		5C8A24BF2320DAF200491891 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		5C8A24C42320E01E00491891 /* SKToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKToastView.swift; sourceTree = "<group>"; };
 		5C8A24C62320E8AE00491891 /* InstagramManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramManager.swift; sourceTree = "<group>"; };
@@ -73,15 +77,18 @@
 		00AC5DEF2317D09A00965A95 /* SocialMediaSharing */ = {
 			isa = PBXGroup;
 			children = (
+				5C0FF905233CB141004B990D /* NSString+Extensions.h */,
+				5C0FF906233CB142004B990D /* NSString+Extensions.m */,
 				5C8A24C62320E8AE00491891 /* InstagramManager.swift */,
 				5C8A24C32320DFF300491891 /* SKToast */,
 				00AC5DF02317D09A00965A95 /* AppDelegate.swift */,
-				00AC5DF22317D09A00965A95 /* ShareViewController.swift */,
 				00AC5DF42317D09A00965A95 /* Main.storyboard */,
+				00AC5DF22317D09A00965A95 /* ShareViewController.swift */,
 				00AC5DF72317D09C00965A95 /* Assets.xcassets */,
 				00AC5DFC2317D09C00965A95 /* Info.plist */,
 				5C8A24BF2320DAF200491891 /* logo.png */,
 				5CDC4EC52321203000496A47 /* ConfigImage.png */,
+				5C0FF904233CB141004B990D /* SocialMediaSharing-Bridging-Header.h */,
 			);
 			path = SocialMediaSharing;
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 				00AC5DE92317D09A00965A95 /* Sources */,
 				00AC5DEA2317D09A00965A95 /* Frameworks */,
 				00AC5DEB2317D09A00965A95 /* Resources */,
+				5C9269D68FF711D9567F9B69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +152,7 @@
 				TargetAttributes = {
 					00AC5DEC2317D09A00965A95 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -182,6 +191,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5C9269D68FF711D9567F9B69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CBB2126D35B3FBFC413BB013 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0FF907233CB142004B990D /* NSString+Extensions.m in Sources */,
 				5C8A24C52320E01E00491891 /* SKToastView.swift in Sources */,
 				00AC5DF32317D09A00965A95 /* ShareViewController.swift in Sources */,
 				5C8A24C72320E8AE00491891 /* InstagramManager.swift in Sources */,
@@ -255,7 +282,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -316,7 +343,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -354,6 +381,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXC97M627A;
 				INFOPLIST_FILE = SocialMediaSharing/Info.plist;
@@ -361,8 +390,77 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"FacebookCore\"",
+					"-framework",
+					"\"FacebookLogin\"",
+					"-framework",
+					"\"FacebookShare\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"TwitterKit\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.promact.SocialMediaSharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialMediaSharing/SocialMediaSharing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -374,6 +472,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXC97M627A;
 				INFOPLIST_FILE = SocialMediaSharing/Info.plist;
@@ -381,8 +481,76 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"FacebookCore\"",
+					"-framework",
+					"\"FacebookLogin\"",
+					"-framework",
+					"\"FacebookShare\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"TwitterKit\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.promact.SocialMediaSharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialMediaSharing/SocialMediaSharing-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
